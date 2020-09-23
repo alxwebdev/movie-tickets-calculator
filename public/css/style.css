@@ -1,0 +1,42 @@
+/* Calculator page */
+h1 span {
+  background-color: #bbeffd;
+  border-bottom-color: #1a1a1a;
+  border-bottom: 1px double;
+}
+
+/* Result page */
+
+.gray-alert {
+  padding: 10px;
+  border-radius: 4px;
+  border-color: #d6e9c6;
+  background-color: #f2f2f2;
+}
+
+.success-alert {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  border-radius: 4px;
+  padding: 5px 10px 10px 10px;
+  margin-bottom: 16px;
+}
+
+.danger-alert {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  border-radius: 4px;
+  padding: 5px 10px 10px 10px;
+  margin-bottom: 16px;
+}
+
+.success-alert p strong,
+.danger-alert p strong {
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+}

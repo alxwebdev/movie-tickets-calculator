@@ -1,0 +1,77 @@
+<%- include ('partials/header') %>
+
+<h1><span>Server side</span> Node and Express App</h1>
+<h2>Fictional free movie tickets calculator</h2>
+
+<form method="POST" action="/calculator">
+  <fieldset>
+    <legend
+      style="
+        background-color: coral;
+        color: cornsilk;
+        border-radius: 6px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 0.3rem 1rem;
+      "
+    >
+      Movie Tickets
+    </legend>
+    <div class="triangle"></div>
+    <p><strong>Pick a movie</strong></p>
+    <div class="radio">
+      <label for="batman" style="font-size: 120%">
+        <input
+          name="movie"
+          type="radio"
+          checked
+          value="batman"
+          id="batman"
+        />Batman The Dark Knight
+      </label>
+    </div>
+    <div class="radio">
+      <label for="potter" style="font-size: 120%">
+        <input id="potter" name="movie" type="radio" value="potter" />Harry
+        Potter
+      </label>
+    </div>
+    <div class="radio">
+      <label for="taxi" style="font-size: 120%">
+        <input name="movie" type="radio" id="taxi" value="taxi" />Taxi Driver
+      </label>
+    </div>
+    <p><strong>Civil status</strong></p>
+    <div class="radio">
+      <label for="single" style="font-size: 120%">
+        <input
+          checked
+          name="status"
+          type="radio"
+          id="single"
+          value="single"
+        />Single
+      </label>
+    </div>
+    <div class="radio">
+      <label for="married" style="font-size: 120%">
+        <input name="status" type="radio" id="married" value="married" />Married
+      </label>
+    </div>
+    <div style="margin-top: 0.8rem" class="form-group">
+      <label for="income"><strong>Enter your annual income</strong> </label>
+      [Digit without commas]
+      <input
+        style="margin-top: 0.6rem"
+        id="income"
+        class="form-control"
+        name="income"
+        type="text"
+        required
+      />
+    </div>
+    <button>Submit</button>
+  </fieldset>
+</form>
+
+<%- include ('partials/footer') %>

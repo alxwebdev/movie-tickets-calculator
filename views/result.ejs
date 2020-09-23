@@ -1,0 +1,25 @@
+<%- include ('partials/header') %>
+<h2>Free movie tickets: may I have one? 🎫</h2>
+<p style="font-size: 120%">Summary of all the information entered:</p>
+
+<p class="gray-alert">
+  Selected movie is <span><strong><%= data.movie %></strong></span>
+</p>
+<p class="gray-alert">
+  Civil status is <span><strong><%= data.status %></strong></span>
+</p>
+<p class="gray-alert">
+  Income is <span><strong><%= data.income %></strong></span> euro/year
+</p>
+
+<p style="font-size: 120%">Result:</p>
+
+<div
+  class="<%= data.result.includes('Yes') ? 'success-alert' : 'danger-alert' %>"
+>
+  <p><strong><%= data.result %></strong></p>
+</div>
+
+<div class="center"><a href="/calculator">Back to Calculator</a></div>
+
+<%- include ('partials/footer') %>
